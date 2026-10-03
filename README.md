@@ -2,7 +2,7 @@
 
 A Streamlit app that finds and counts faces in a photo using **MTCNN**, with confidence scores, facial landmarks, cropped faces, and a filter that removes false detections.
 
-![FaceVision detecting four faces](facevision/assets/Screenshot2.png)
+![FaceVision detecting four faces](assets/Screenshot2.png)
 
 ## Features
 - Detects every face and draws a box with a confidence score and five landmarks (eyes, nose, mouth corners)
@@ -11,7 +11,7 @@ A Streamlit app that finds and counts faces in a photo using **MTCNN**, with con
 - **False-positive filter**: removes detections that aren't faces
 - **Debug view**: lists every candidate MTCNN returned and why it was kept or dropped
 
-![Debug view of raw detections](facevision/assets/Screenshot1.png)
+![Debug view of raw detections](assets/Screenshot1.png)
 
 ## How the filtering works
 MTCNN occasionally reports non-face objects with high confidence. In testing, a sandal scored 99.4% and a patterned dress 94.5%. FaceVision handles this in three steps:
